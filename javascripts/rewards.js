@@ -41,7 +41,7 @@ const REWARD_RARITIES = [
     ["Rare", "#09f"],
     ["Epic", "#90f"],
     ["Legendary", "#f90"],
-    ["Secret", "#000"],
+    ["Secret", "#f90"],
 ]
 
 function calculateRewards(count = 6) {

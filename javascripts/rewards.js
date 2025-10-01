@@ -27,9 +27,13 @@ const REWARDS = [
         () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Operator(OperatorType.Logarithm), true)), 1],
         () => [new Operator(OperatorType.MultVariable, new Slot(2, new Variable("P"), true), new Slot(0, new Operator(OperatorType.Logarithm), true)), 1],
     ],
+    [
+    () => [new Operator(OperatorType.Exponent, null, new Slot(0, 0 true)), 1],
+     () => [new Operator(OperatorType.Repeat, new Slot(4, new Constant(10)), 1],
+    ],
 ]
 
-const REWARD_CHANCES = [1,1/5,1/25,1/100,1/300,0]
+const REWARD_CHANCES = [1,1/5,1/25,1/100,1/300,1/2,0]
 
 const REWARD_RARITIES = [
     ["Common", "#888"],
@@ -37,6 +41,7 @@ const REWARD_RARITIES = [
     ["Rare", "#09f"],
     ["Epic", "#90f"],
     ["Legendary", "#f90"],
+    ["Secret", "#000"],
 ]
 
 function calculateRewards(count = 6) {

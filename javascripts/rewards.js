@@ -31,7 +31,7 @@ const REWARDS = [
         () => [new Constant(randInt(10001,100000)), randInt(1,3)],
     ],
     [
-        () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Variable("P") true)), 1],
+        () => [new Operator(OperatorType.Exponent), 1],
         () => [new Constant(randInt(100001,1000000)), randInt(1,3)],
     ],
 ]

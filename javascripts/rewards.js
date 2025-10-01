@@ -36,7 +36,7 @@ const REWARDS = [
     ],
 ]
 
-const REWARD_CHANCES = [1,1/5,1/25,1/100,1/300,1/500]
+const REWARD_CHANCES = [1,1/5,1/25,1/100,1/300,1/2]
 
 const REWARD_RARITIES = [
     ["Common", "#888"],

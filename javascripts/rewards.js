@@ -17,18 +17,22 @@ const REWARDS = [
         () => [new Operator(OperatorType.Product), 1],
         () => [new Operator(OperatorType.MultVariable), 1],
         () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Constant(2), true)), 1],
+        () => [new Constant(randInt(101,1000)), randInt(1,3)],
     ],
     [
         () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Constant(3), true)), 1],
         () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Operator(OperatorType.Logarithm, new Slot(0, new Operator(OperatorType.Logarithm), true)), true)), 1],
         () => [new Operator(OperatorType.Repeat, new Slot(4, new Constant(2 + Math.floor(-logBase(Math.random(),3))), true)), 1],
+        () => [new Constant(randInt(1001,10000)), randInt(1,3)],
     ],
     [
         () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Operator(OperatorType.Logarithm), true)), 1],
         () => [new Operator(OperatorType.MultVariable, new Slot(2, new Variable("P"), true), new Slot(0, new Operator(OperatorType.Logarithm), true)), 1],
+        () => [new Constant(randInt(10001,100000)), randInt(1,3)],
     ],
     [
-        () => [new Operator(OperatorType.Exponent, null, new Slot(0, 0 true)), 1],
+        () => [new Operator(OperatorType.Exponent, null, new Slot(0, new Variable("P") true)), 1],
+        () => [new Constant(randInt(100001,1000000)), randInt(1,3)],
     ],
 ]
 
